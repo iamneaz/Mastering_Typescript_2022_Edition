@@ -25,3 +25,34 @@ function rando(num: number): string | number {
     }
     return num;
 }
+
+/*
+**  Anonymous Functions
+*/
+const colors = ["red", "green", "blue"];
+colors.map(color => {
+    return color.toUpperCase();
+})
+
+
+/*
+**  Void Return Type
+*/
+
+function printTwice(message: string): void {
+    console.log(message);
+    console.log(message);
+}
+
+/*
+**  Never Type
+*/
+function makeError(msg: string): never {
+    throw new Error(msg)
+}
+
+function gameLoop(): never {
+    while (true) {
+        console.log("GAME LOOP RUNNING");
+    }
+}
