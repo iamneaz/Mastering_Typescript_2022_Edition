@@ -1,0 +1,25 @@
+to generate tsconfig.json file :
+tsc --init
+
+to tell typescript to complie a file everytime the file changes:
+    -w or --watch
+tsc -w index.ts
+
+to complie all the ts files to js in a folder :
+tsc 
+
+to watch all the files in the folder:
+tsc -w
+
+using "files" : ["farmstand.ts","index.ts"] outside of "compilerOptions" in tsconfig.json file and using tsc command only compiles those files in the given parameter
+
+If i want to only include files which i in a directory, then outside of "compilerOptions" in tsconfig.json use "include": ["src"]
+to exclude a file: 
+"exclude": ["dontTouch.ts"]
+** the file or folder path needs to be relative to tsconfig.json
+
+to generate js files in another directory, inside of compilerOptions,
+"outDir": "./dist"
+
+to change js version, inside of compilerOptions,
+"target": "es2016", 
