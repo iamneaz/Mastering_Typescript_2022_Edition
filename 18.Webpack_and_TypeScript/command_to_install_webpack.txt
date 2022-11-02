@@ -1,0 +1,12 @@
+npm install --save-dev webpack webpack-cli typescript ts-loader
+ts-loader is the middleman between webpack and typescript
+
+for webpack.config.js ===> https://webpack.js.org/guides/typescript/
+
+for installing webpack dev server ===> npm install --save-dev webpack-dev-server
+
+filename: '[contenthash].bundle.js', in webpack
+
+install clean webpack plugin 
+
+npm install --save-dev clean-webpack-plugin
